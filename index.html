@@ -1,32 +1,39 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- ===== CSS ===== -->
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="sortcut icon" href="assets/img/favicon.png" type="image/x-icon" />;
+        
+        <!--========== CSS ==========-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <!-- ===== BOX ICONS ===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-        <title>Isaque Portifólio</title>
+        <title>Be Bossy</title>
     </head>
     <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Marketing Business</a>
-                </div>
 
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <img src="assets/img/logo.png" class="home__logo">
+                
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Inicio</a></li>
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Início</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li>
-                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contato</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Propósito</a></li>
+                        <li class="nav__item"><a href="#menu" class="nav__link">Serviços</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contate-nos</a></li>
+
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
                     </ul>
                 </div>
 
@@ -37,190 +44,185 @@
         </header>
 
         <main class="l-main">
-            <!--===== HOME =====-->
+            <!--========== HOME ==========-->
             <section class="home" id="home">
-                <div class="home__container bd-grid">
-                    <h1 class="home__title"><span>ISAQUE</span><br><span>BOMFIM</span></h1>
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__data">
+                        <h1 class="home__title">Agência de Marketing</h1>
+                        <h2 class="home__subtitle">Soluções digitais. <br> Digitalize seu negócio!</h2>
+                        <a href="#services" class="button">Conheça nossos serviços</a>
+                    </div>
+    
+                    <img src="assets/img/home.png" alt="" class="home__img">
+                </div>
+            </section>
+            
+            <!--========== ABOUT ==========-->
+            <section class="about section bd-container" id="about">
+                <div class="about__container  bd-grid">
+                    <div class="about__data">
+                        <span class="section-subtitle about__initial">Sobre nós</span>
+                        <h2 class="section-title about__initial">Agência de marketing <br> Foco: canais digitais</h2>
+                        <p class="about__description">Lorem ipsum hendrerit fames vulputate sodales consectetur aenean maecenas sed senectus sagittis laoreet, lectus ante suspendisse curae egestas elit urna condimentum placerat taciti. nibh senectus aenean habitasse nulla purus feugiat mi, etiam lorem viverra dictumst nec consectetur, quisque hac lorem mi pharetra class.</p>
+                        <a href="#services" class="button">Nossos serviços</a>
+                    </div>
+
+                    <img src="assets/img/about.jfif" alt="" class="about__img">
+                </div>
+            </section>
+
+            <!--========== SERVICES ==========-->
+            <section class="services section bd-container" id="
+            ">
+                <span class="section-subtitle">Propósito</span>
+                <h2 class="section-title">O que nos torna diferente !</h2>
+
+                <div class="services__container  bd-grid">
+                    <div class="services__content">
+                        <img src="assets/img/missao.png" class="services__img">
+                        <h3 class="services__title">Missão</h3>
+                        <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <img src="assets/img/visao.png" class="services__img">
+                        <h3 class="services__title">Visão</h3>
+                        <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <img src="assets/img/valor.png" class="services__img">
+                        <h3 class="services__title">Valor</h3>
+                        <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--========== MENU ==========-->
+            <section class="menu section bd-container" id="menu">
+                <span class="section-subtitle">Serviços</span>
+                <h2 class="section-title">Temos o que voce precisa!</h2>
+
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <img src="assets/img/plate1.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Redes Sociais</h3>
+                        <span class="menu__detail">Principais redes socais, estrutura ideal para seu negócio engajar o maior numero de pessoas.</span>
+                        <a href="#" class="button menu__button"><i class='bx bxs-message-alt-detail'></i></a>
+                        <span class="menu__preci">Saiba mais ...</span>
+                    </div>
                     
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
+                    <div class="menu__content">
+                        <img src="assets/img/plate2.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Midias Pagas</h3>
+                        <span class="menu__detail">Trabalhamos com analises, estratégias e engajamento através de ações pagas em redes sociais. </span>
+                        <span class="menu__preci">Saiba mais ...</span>
+                        <a href="#" class="button menu__button"><i class='bx bxs-message-alt-detail'></i></a>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/plate3.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Website</h3>
+                        <span class="menu__detail">Website de acordo com a identidade da empresa. Sempre buscando atender o usuario.</span>
+                        <span class="menu__preci">Saiba mais ...</span>
+                        <a href="#" class="button menu__button"><i class='bx bxs-message-alt-detail'></i></a>
                     </div>
 
-                    <img src="assets/img/perfil.png" alt="" class="home__img">
-
-                    <div class="wrap">
-                        <form action="https://www.google.com/" method="get">
-                            <button href="https://api.whatsapp.com/send?phone=5511932149480&text=Quero%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20BMAX!" type="submit" class="button">Contate-me</button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-            
-            <!--===== ABOUT =====-->
-            <section class="about section" id="about">
-                <h2 class="section-title">Quem sou ?</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/perfil.png" alt="">
+                    <div class="menu__content">
+                        <img src="assets/img/plate3.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Audio Visual</h3>
+                        <span class="menu__detail">Website de acordo com a identidade da empresa. Sempre buscando atender o usuario.</span>
+                        <span class="menu__preci">Saiba mais ...</span>
+                        <a href="#" class="button menu__button"><i class='bx bxs-message-alt-detail'></i></a>
                     </div>
 
-                    <div>
-                        <h2 class="about__subtitle">Sou Isaque Bomfim</h2>
-                        <span class="about__profession">CEO Bmax - Agencia Marketing</span>
-                        <p class="about__text">" Tudo é considerado impossivel, até acontecer! "</p>
-                        <p class="about__text">- Nelson Mandela.</p>
-                        <div class="about__social">
-                            <a href="https://www.linkedin.com/in/isaque-bomfim/" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
-                            <a href="https://www.facebook.com/isaque.zika" class="about__social-icon"><i class='bx bxl-facebook' ></i></a>
-                            <a href="https://www.instagram.com/bmaxbusiness/" class="about__social-icon"><i class='bx bxl-instagram' ></i></a>
-                            <a href="https://api.whatsapp.com/send?phone=5511932149480&text=Quero%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20BMAX!" class="about__social-icon"><i class='bx bxl-whatsapp' ></i></a>
-                            <a href="https://t.me/bmaxmarketing" class="about__social-icon"><i class='bx bxl-telegram' ></i></a>
-                            <a href="https://www.youtube.com/channel/UCGHfECmkWN_QUQdCfxDfu1w" class="about__social-icon"><i class='bx bxl-youtube' ></i></a>
-                            <a href="www.pinterest.com/bmaxmarketing" class="about__social-icon"><i class='bx bxl-pinterest' ></i></a>
-                        </div>
-                    </div>
                 </div>
             </section>
 
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Habilidades</h2>
-
-                <div class="skills__container bd-grid">
-                    <div class="skills__box">
-                        <h3 class="skills__subtitle">Mareting Digtal</h3>
-                        <span class="skills__name">Redes Sociais</span>
-                        <span class="skills__name">Sites</span>
-                        <span class="skills__name">Identidade Visual</span>
-                        <span class="skills__name">Gestão de Publicidade</span>
-                        <span class="skills__name">Portifólio</span>
-                        <span class="skills__name">Google Anuncios</span>
-                        <span class="skills__name">Inteligencia de Mercado</span>
-                        
-                        <h3 class="skills__subtitle">Design</h3>
-                        <span class="skills__name">CorelDrawn</span>
-                        <span class="skills__name">Ilustrator</span>
-                        <span class="skills__name">Photoshop</span>
-
-                        <h3 class="skills__subtitle">Negócios</h3>
-                        <span class="skills__name">Banco de Dados (SQL, Oracle, MySQL) </span>
-                        <span class="skills__name">Ferramentas de ETL</span>
-                        <span class="skills__name">Power BI</span>
-                        <span class="skills__name">Excel</span>
-                        <span class="skills__name">Planejamento Estratégico</span>
+            <!--===== APP =======-->
+            <section class="app section bd-container">
+                <div class="app__container bd-grid">
+                    <div class="app__data">
+                        <span class="section-subtitle app__initial">App</span>
+                        <h2 class="section-title app__initial">App is aviable</h2>
+                        <p class="app__description">Find our application and download it, you can make reservations, food orders, see your deliveries on the way and much more.</p>
+                        <div class="app__stores">
+                            <a href="#"><img src="assets/img/app1.png" alt="" class="app__store"></a>
+                            <a href="#"><img src="assets/img/app2.png" alt="" class="app__store"></a>
+                        </div>
                     </div>
 
-                    <div class="skills__img">
-                        <img src="assets/img/skill.jpg" alt="">
-                    </div>
+                    <img src="assets/img/movil-app.png" alt="" class="app__img">
                 </div>
             </section>
 
-            <!--===== PORTFOLIO =====-->
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section-title">Portfolio</h2>
-
-                <div class="portfolio__container bd-grid">
-                    <div class="portfolio__img">
-                        <img src="assets/img/work1.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/work2.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/work3.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/work4.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/work5.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/work6.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contato</h2>
-
+            <!--========== CONTACT US ==========-->
+            <section class="contact section bd-container" id="contact">
                 <div class="contact__container bd-grid">
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">EMAIL</h3>
-                        <span class="contact__text">isaque.bomfim10@gmail.com</span>
-
-                        <h3 class="contact__subtitle">TELEFONE</h3>
-                        <span class="contact__text">+55 (11) 93214-9480</span>
-
-                        <h3 class="contact__subtitle">LOCALIZAÇÃO</h3>
-                        <span class="contact__text">São Paulo - Brasil</span>
+                    <div class="contact__data">
+                        <span class="section-subtitle contact__initial">Let's talk</span>
+                        <h2 class="section-title contact__initial">Contact us</h2>
+                        <p class="contact__description">If you want to reserve a table in our restaurant, contact us and we will attend you quickly, with our 24/7 chat service.</p>
                     </div>
 
+                    <div class="contact__button">
+                        <a href="#" class="button">Contact us now</a>
+                    </div>
                 </div>
             </section>
         </main>
 
-        <!--===== FOOTER =====-->
-        <footer class="footer section">
+        <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container">
             <div class="footer__container bd-grid">
-                <div class="footer__data">
-                    <h2 class="footer__title">ISAQUE BOMFIM</h2>
-                    <p class="footer__text">Sou Isaque Bomfim e este é meu site de apresentação!</p>
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">Tasty Food</a>
+                    <span class="footer__description">Restaurant</span>
+                    <div>
+                        <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    </div>
                 </div>
 
-                <div class="footer__data">
-                    <h2 class="footer__title">EXPLORE</h2>
+                <div class="footer__content">
+                    <h3 class="footer__title">Services</h3>
                     <ul>
-                        <li><a href="#home" class="footer__link">Inicio</a></li>
-                        <li><a href="#about" class="footer__link">Sobre</a></li>
-                        <li><a href="#skills" class="footer__link">Habilidades</a></li>
-                        <li><a href="#portfolio" class="footer__link">Portifólio</a></li>
-                        <li><a href="#Contact" class="footer__link">Contato</a></li>
+                        <li><a href="#" class="footer__link">Delivery</a></li>
+                        <li><a href="#" class="footer__link">Pricing</a></li>
+                        <li><a href="#" class="footer__link">Fast food</a></li>
+                        <li><a href="#" class="footer__link">Reserve your spot</a></li>
                     </ul>
                 </div>
-                
-                <div class="footer__data">
-                    <h2 class="footer__title">SIGA-ME</h2>
-                    <a href="#" class="footer__social"><i class='bx bxl-facebook' ></i></a>
-                    <a href="#" class="footer__social"><i class='bx bxl-instagram' ></i></a>
-                    <a href="#" class="footer__social"><i class='bx bxl-twitter' ></i></a>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Information</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Event</a></li>
+                        <li><a href="#" class="footer__link">Contact us</a></li>
+                        <li><a href="#" class="footer__link">Privacy policy</a></li>
+                        <li><a href="#" class="footer__link">Terms of services</a></li>
+                    </ul>
                 </div>
 
-
+                <div class="footer__content">
+                    <h3 class="footer__title">Adress</h3>
+                    <ul>
+                        <li>Lima - Peru</li>
+                        <li>Jr Union #999</li>
+                        <li>999 - 888 - 777</li>
+                        <li>tastyfood@email.com</li>
+                    </ul>
+                </div>
             </div>
+
+            <p class="footer__copy">&#169; 2020 Bedimcode. All right reserved</p>
         </footer>
 
-        <!--===== SCROLL REVEAL =====-->
+        <!--========== SCROLL REVEAL ==========-->
         <script src="https://unpkg.com/scrollreveal"></script>
 
-        <!--===== MAIN JS =====-->
+        <!--========== MAIN JS ==========-->
         <script src="assets/js/main.js"></script>
     </body>
 </html>
